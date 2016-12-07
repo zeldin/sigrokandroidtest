@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="20dp">
+    <Button
+            android:id="@+id/button1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Button 1" />
+    <Button
+            android:id="@+id/button2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/button1"
+            android:text="Button 2" />
+    <Button
+            android:id="@+id/scan"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="Scan" />
+    <TextView
+            android:id="@+id/log"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:layout_above="@id/button2"
+            android:layout_below="@id/scan" />
+</RelativeLayout>

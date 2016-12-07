@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="se.pp.mc.android.sigrok.sigrokandroidtest"
+    android:versionCode="1000"
+    android:versionName="1.0" >
+  <application android:name="org.sigrok.androidutils.SigrokApplication"
+	android:label="@string/application_label">
+    <activity
+      android:name="se.pp.mc.android.sigrok.sigrokandroidtest.SigrokAndroidTestActivity"
+      android:label="@string/application_label"
+      android:theme="@android:style/Theme.Holo.Light">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+	<category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity>
+  </application>
+  <uses-sdk android:minSdkVersion="12" android:targetSdkVersion="14"/>
+</manifest>
